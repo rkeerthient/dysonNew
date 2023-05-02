@@ -39,7 +39,7 @@ const Header = () => {
             height="50"
           ></img>
           <nav className=" flex mt-4 items-center justify-between">
-            <ul className=" text-sm flex items-center justify-between text-white w-1/2">
+            <ul className=" text-sm flex items-center justify-between text-white w-3/4">
               <li>
                 <a href="/floor-care">Vaccum Cleaners</a>
               </li>
