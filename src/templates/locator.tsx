@@ -32,7 +32,7 @@ const searcher = provideHeadless({ ...sc, verticalKey: "locations" });
 
 const Locator: Template<TemplateRenderProps> = () => {
   return (
-    <PageLayout>
+    <PageLayout _site={undefined}>
       <SearchHeadlessProvider searcher={searcher}>
         <div className="mx-auto max-w-7xl px-4">
           <StoreLocator />
