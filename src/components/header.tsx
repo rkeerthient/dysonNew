@@ -1,5 +1,4 @@
 import * as React from "react";
-import Cta from "../components/cta";
 
 type Link = {
   label: string;
@@ -15,6 +14,10 @@ const links: Link[] = [
     label: "About",
     url: "/turtlehead-tacos",
   },
+  {
+    label: "locator",
+    url: "/locator",
+  },
 ];
 
 const Header = () => {
@@ -27,27 +30,42 @@ const Header = () => {
   ));
 
   return (
-    <>
+    <div className="w-full bg-black">
       <div className="centered-container">
-        <nav className="py-6 flex items-center justify-between">
+        <div className="py-6   items-center justify-between">
           <img
-            src="https://cdn.fs.brandfolder.com/cache=expiry:604800/deY3VGFpSjC761Abjbfc"
+            src="https://www.dyson.com/etc.clientlibs/dyson/clientlibs/clientlib-main/resources/images/dyson-logo.svg"
             width="50"
             height="50"
           ></img>
-          <div className="text-2xl font-semibold">Turtlehead Tacos</div>
-          <div className="flex gap-x-10 text-lg font-semibold">{linkDoms}</div>
-          <div className="space-x-5">
-            <Cta buttonText="Order Pickup" url="#" style="primary-cta"></Cta>
-            <Cta
-              buttonText="Order Delivery"
-              url="#"
-              style="secondary-cta"
-            ></Cta>
-          </div>
-        </nav>
+          <nav className=" flex mt-4 items-center justify-between">
+            <ul className=" text-sm flex items-center justify-between text-white w-1/2">
+              <li>
+                <a href="/floor-care">Vaccum Cleaners</a>
+              </li>
+              <li>
+                <a href="/hair-care">Hair Care</a>
+              </li>
+              <li>
+                <a href="/lighting">Lighting</a>
+              </li>
+              <li>
+                <a href="/accessories">Spares and accessories</a>
+              </li>
+              <li>
+                <a href="/help_articles">Help Articles</a>
+              </li>
+              <li>
+                <a href="/environmental_control">Environmental Control</a>
+              </li>
+              <li>
+                <a href="/locator">Locator</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 

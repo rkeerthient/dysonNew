@@ -17,14 +17,11 @@ import type {
   GetHeadConfig,
   HeadConfig,
 } from "@yext/pages";
-import { useSearchState } from "@yext/search-headless-react";
 import * as React from "react";
 import PageLayout from "../components/page-layout";
-import SearchResults from "../components/SearchResults";
 import "../index.css";
-import Ce_vacuums from "../types/floor_care";
-import { CardProps } from "@yext/answers-react-components";
 import FloorCareCard from "../components/Cards/FloorCareCard";
+import SearchResults from "../components/SearchResults";
 
 export const config: TemplateConfig = {
   name: "floor-care",

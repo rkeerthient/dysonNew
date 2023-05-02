@@ -19,10 +19,10 @@ import type {
 } from "@yext/pages";
 import * as React from "react";
 import PageLayout from "../components/page-layout";
-import SearchResults from "../components/SearchResults";
 import "../index.css";
 import { CardProps } from "@yext/answers-react-components";
 import AccessoriesCard from "../components/Cards/AccessoriesCard";
+import SearchResults from "../components/SearchResults";
 
 export const config: TemplateConfig = {
   name: "environmental_control",

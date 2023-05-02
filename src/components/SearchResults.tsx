@@ -10,7 +10,6 @@ import {
 } from "@yext/search-ui-react";
 import * as React from "react";
 import { useEffect } from "react";
-import AccessoriesCard from "./Cards/AccessoriesCard";
 import { CardComponent } from "@yext/answers-react-components";
 
 type Props = {
